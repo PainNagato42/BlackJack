@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+}
+.table {
+  position: absolute;
+  top: 44%;
+  left: 51%;
+  background-color: #1f5b1f;
+  width: 950px;
+  height: 654px;
+  transform: translate(-50%, -50%);
+  border-radius: 150px;
+  border: 14px solid gray;
+}
+.money,
+#miseOk,
+#miseOkSplit {
+  position: absolute;
+  font-size: 2rem;
+}
+.money {
+  top: 13%;
+  left: 9%;
+  background-color: #79c0ff;
+  font-size: 4rem;
+  padding: 12px;
+  border: 1px solid #111;
+}
+#miseOk,
+#miseOkSplit {
+  left: 48%;
+  top: 39%;
+  padding: 15px;
+  border-radius: 999px;
+  background-color: rgb(94, 163, 209);
+  color: rgb(226, 246, 15);
+}
+.miseLeft38 {
+  left: 38% !important;
+}
+#miseOkSplit {
+  left: 58%;
+}
+/*******************************************************/
+/* MISE EN FORME */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1450px;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.justify-around {
+  justify-content: space-around;
+  width: 40%;
+}
+.none {
+  display: none;
+}
+/*******************************************************/
+/* WIDTH */
+.width_100 {
+  width: 100%;
+}
+.width_10 {
+  width: 10%;
+}
+
+/*******************************************************/
+/* COLOR */
+.red {
+  color: rgb(224, 81, 81);
+}
+.black {
+  color: rgb(19, 19, 19);
+}
+.bg_perdu {
+  background-color: #ff4949 !important;
+}
+.bg_gagner {
+  background-color: #1bff1b !important;
+}
+.bg_egal {
+  background-color: rgb(248, 148, 56) !important;
+}
+.bg_BJ {
+  background-color: rgb(255, 255, 0) !important;
+}
+/*******************************************************/
+/* CONTAIN CARD */
+.container_card {
+  position: relative;
+}
+.bank {
+  top: 25%;
+}
+#player {
+  bottom: 48%;
+}
+.border-split {
+  border: 3px solid yellow;
+  border-radius: 6px;
+}
+/*******************************************************/
+/* CARD */
+.card,
+.front,
+.back {
+  position: relative;
+  border: 1px solid gray;
+  background-color: #f1f1f1;
+  height: 180px;
+  width: 130px;
+  border-radius: 5px;
+}
+.card,
+label {
+  margin-left: -95px;
+}
+.card:first-child {
+  margin-left: 0;
+}
+.left,
+.middle,
+.right {
+  position: absolute;
+  font-size: 3rem;
+}
+.middle {
+  font-size: 5rem;
+}
+.right {
+  right: 1%;
+  bottom: 0;
+}
+.somme-card {
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  background-color: #c4d2af;
+}
+label {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.card-flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.front,
+.back {
+  backface-visibility: hidden;
+  transition: all 0.5s ease;
+}
+.back {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: rotateY(-180deg);
+  background-color: royalblue;
+}
+input.check_none {
+  display: none;
+}
+
+/*******************************************************/
+/* MARGIN / PADDING */
+.margin_bottom_200 {
+  margin-bottom: 200px;
+}
+
+/*******************************************************/
+/* BTN */
+.contain-choix {
+  position: absolute;
+  left: 33%;
+  bottom: 10%;
+}
+.btn {
+  font-size: 2rem;
+  border: 2px solid gray;
+  background-color: royalblue;
+  box-shadow: inset 0px 9px 5px #60b5ff;
+  color: #f1f1f1;
+  padding: 15px;
+  margin: 0 15px;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.15);
+}
